@@ -1,0 +1,177 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bengkel Family Teknik — Service & Jual Aki</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand">
+        <img src="https://via.placeholder.com/48x48.png?text=B" alt="logo" class="brand-logo" />
+        <span class="brand-title">Bengkel Family Teknik</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="#services">Layanan</a>
+        <a href="#marketplace">Jual Aki</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Buka menu" id="menuToggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Servis & Solusi Kelistrikan Mobil & Motor — Cepat, Rapi, Terpercaya</h1>
+          <p class="lead">Spesialis: Aki, Dynamo, Starter, Alternator, Radiator, Suspensi, EPS — garansi & konsultasi gratis via WhatsApp.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#marketplace">Beli Aki Sekarang</a>
+            <a class="btn btn-outline" href="#services">Lihat Layanan</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1607082343013-3e91a2d4ad2d?q=80&w=1200&auto=format&fit=crop&crop=entropy" alt="bengkel" />
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <header class="section-header">
+        <h2>Layanan Kami</h2>
+        <p>Beragam layanan servis profesional untuk mobil & motor — perbaikan, perawatan, dan upgrade.</p>
+      </header>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Jual Aki & Cas Aki</h3>
+          <p>Penjualan aki berkualitas & layanan pengisian/pengetesan aki cepat.</p>
+          <a href="#marketplace" class="link-btn">Lihat Aki</a>
+        </article>
+
+        <article class="service-card">
+          <h3>Gulung Ulang Dynamo (3 Phasa & 1 Phasa)</h3>
+          <p>Rewinding stator & rotor untuk motor listrik & industri, presisi & tahan lama.</p>
+          <a href="#contact" class="link-btn">Konsultasi</a>
+        </article>
+
+        <article class="service-card">
+          <h3>Service Dynamo Starter & Alternator Mobil</h3>
+          <p>Diagnosis, perbaikan, dan penggantian komponen kelistrikan starter & alternator.</p>
+          <a href="#contact" class="link-btn">Booking</a>
+        </article>
+
+        <article class="service-card">
+          <h3>Service Radiator Mobil</h3>
+          <p>Flushing, perbaikan kebocoran, penggantian komponen pendingin.</p>
+          <a href="#contact" class="link-btn">Booking</a>
+        </article>
+
+        <article class="service-card">
+          <h3>Service Suspensi Mobil</h3>
+          <p>Pemeriksaan & penggantian per, shock absorber, alignment.</p>
+          <a href="#contact" class="link-btn">Booking</a>
+        </article>
+
+        <article class="service-card">
+          <h3>Service Setir EPS Elektrik</h3>
+          <p>Perbaikan sensor, motor EPS, dan kalibrasi sistem kemudi elektrik.</p>
+          <a href="#contact" class="link-btn">Booking</a>
+        </article>
+
+        <article class="service-card">
+          <h3>Service Kaki-Kaki Mobil</h3>
+          <p>Perawatan ball joint, tie rod, bushings, dan balancing roda.</p>
+          <a href="#contact" class="link-btn">Booking</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="marketplace" class="section container marketplace-section">
+      <header class="section-header">
+        <h2>Marketplace Aki</h2>
+        <p>Pilih aki terbaik untuk kendaraan Anda — klik pesan untuk konfirmasi lewat WhatsApp.</p>
+      </header>
+
+      <div class="filter-row">
+        <input type="text" id="searchInput" placeholder="Cari produk (mis. NS60, MF, VRLA) ..." />
+        <select id="filterType">
+          <option value="">Semua Tipe</option>
+          <option value="mobil">Mobil</option>
+          <option value="motor">Motor</option>
+        </select>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- Product cards injected by JS -->
+      </div>
+    </section>
+
+    <section id="about" class="section container about">
+      <header class="section-header">
+        <h2>Tentang Bengkel Family Teknik</h2>
+        <p>Kami menggabungkan keahlian teknis dan pelayanan ramah — dukungan konsultasi via WhatsApp untuk setiap layanan.</p>
+      </header>
+      <div class="about-grid">
+        <div>
+          <h4>Visi</h4>
+          <p>Menjadi bengkel pilihan dengan reputasi rapi, cepat, dan transparan.</p>
+        </div>
+        <div>
+          <h4>Misi</h4>
+          <p>Memberikan solusi kelistrikan dan mekanik berkualitas dengan harga wajar dan garansi kerja.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact">
+      <header class="section-header">
+        <h2>Kontak & Lokasi</h2>
+        <p>Hubungi kami untuk booking atau konsultasi — semua konfirmasi dilakukan lewat WhatsApp.</p>
+      </header>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4>Alamat</h4>
+          <p id="alamatToko">Jl. Menjangan Raya No.9, RT.5/RW.8, Cemp. Putih, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15412 </p>
+          <a class="link-btn" href="https://maps.app.goo.gl/bwaPN4vyRdGp3FW36" target="_blank" rel="noopener">Buka di Google Maps</a>
+        </div>
+
+        <div class="contact-card">
+          <h4>WhatsApp</h4>
+          <p>Hubungi kami langsung untuk booking & penawaran</p>
+          <a class="btn btn-primary" id="waContact" href="#" target="_blank" rel="noopener">Chat via WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Bengkel Family Teknik</div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal: Product Quick Order -->
+  <div id="modalOverlay" class="modal-overlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Tutup">&times;</button>
+      <div class="modal-body" id="modalBody">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
